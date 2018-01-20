@@ -1,3 +1,9 @@
+site:
+  title: "FutureHack"
+ignore:
+  - README.md
+  - LICENSE
+  - ".git/*"
 assets:
   sass:
     style: Compressed

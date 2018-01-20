@@ -1,6 +1,18 @@
 sudo: false
 before_script:
-  - curl -LSfs https://japaric.github.io/trust/install.sh | sh -s -- --git cobalt-org/cobalt.rs --crate cobalt --force --target x86_64-unknown-linux-gnu --feature sass
-  - export PATH="$PATH:~/.cargo/bin"
+- curl -LSfs https://japaric.github.io/trust/install.sh | sh -s -- --git cobalt-org/cobalt.rs
+  --crate cobalt --force --target x86_64-unknown-linux-gnu
+- export PATH="$PATH:~/.cargo/bin"
 script:
-  - cobalt build
+- cobalt build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: "$GH_TOKEN"
+  local_dir: _site
+  target_branch: master
+  on:
+    branch: source
+env:
+  global:
+    secure: aVRutnHJ7V4sXUQgZe6QWkzDWauJwIpin1NlYJiMEks9bo+cBRCbZWuhA0EwKwuJOCpWsLmMjbNXvPAF9tEp9b9I6D4QNfyhU3dZhaokmuTuNKRUeCggqB7YYRkWGMBGnDBLTdaNg2VqbHt51NmbZlxdQ408ZG7NLXfiP4g9CsQgMcxon42VRS2GjYHt6u4UKYaXusV5O7FYuzOrC4T+6LFs1AVvo18EvKTYd4QsRPl9KdBC4LrCUdlq6XyYzfZeP/gtImj3iKC3rLw0zWkqDgQFg8NtahW+VaUfIoR4fbrGsBndKbnUAgpvIPOAWYcpTmyrE+L4AnS4Ri2Vew6wOUHj8D3UqOZ55XP9lguIxor5Mx+8BYWCzxDo/qpJbVYExFYEKaiFIK4j2UtIQJvxj80GG+6JFrIennLMYrQEStHS2tX+mytJ3qEz4qHouXAOk2L8viMTrnQOCYKWmtpi9aCMHGmiYkhBaF7FShZqoNUWuVYsd8QPAiydMKVvdOAoecgmxsH+qQKmmdhwNDnApTogLwGjWEUaE9Hec/cduBP/KWa8cPThmQuXMe2OiWkkXLa8qn/sn2bW0AqR+VGJ8oJeb2VkmU3aslia5tMKdpHmdbw5PuC7CRFvYqqf86c4xsUhedCeO+HLO706BeIPOajkcGyM4N3LOVT9k1rccVg=

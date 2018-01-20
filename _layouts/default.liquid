@@ -3,7 +3,7 @@
 <meta name="description" content="Futurehack">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>FutureHack{% if page.title != "Index" %} - {{ page.title }}{% endif %}</title>
+<title>{{ site.title }}{% if page.title != "Index" %} - {{ page.title }}{% endif %}</title>
 
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -11,7 +11,9 @@
 <link rel="icon" type="image/png" href="images/favicon.png">
 
 <header {% if page.title != "Index" %}class="dark"{% endif %}>
-  <img src="assets/logo.svg" alt="Futurehack">
+  <a href="/">
+    <img src="assets/logo.svg" alt="Futurehack">
+  </a>
 
   <nav>
     <a href="/">HOME</a>
@@ -19,7 +21,7 @@
     <a {% if page.title == "Theme" %}class="active"{% endif %} href="/theme.html">THEME</a>
     <a href="/faq.html">FAQ</a>
     <a href="/venue.html">VENUE</a>
-    <a href="/contact.html">CONTACT US</a>
+    <a {% if page.title == "Contact Us" %}class="active"{% endif %} href="/contact.html">CONTACT US</a>
   </nav>
 </header>
 
