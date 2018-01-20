@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="description" content="Futurehack">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>FutureHack{% if page.title != "Index" %} - {{ page.title }}{% endif %}</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<header {% if page.title != "Index" %}class="dark"{% endif %}>
+  <img src="assets/logo.svg" alt="Futurehack">
+
+  <nav>
+    <a href="/">HOME</a>
+    <a {% if page.title == "About Us" %}class="active"{% endif %} href="/about.html">ABOUT US</a>
+    <a {% if page.title == "Theme" %}class="active"{% endif %} href="/theme.html">THEME</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/venue.html">VENUE</a>
+    <a href="/contact.html">CONTACT US</a>
+  </nav>
+</header>
+
+<main>
+  {% if page.title != "Index" %}<h1 class="center color">{{ page.title | upcase }}</h1>{% endif %}
+  {{ page.content }}
+</main>
+
+{% if page.title == "Contact Us" %}
+<footer>
+  <span class="left">
+    FUTUREHACK 2018
+  </span>
+  <span class="right">
+    Designed by Chee Seng Leong
+    (<a href="https://github.com/FUTUREHACKmy/futurehackmy.github.io">Source</a>)
+  </span>
+</footer>
+{% endif %}
+
+<script src="script.js" async></script>

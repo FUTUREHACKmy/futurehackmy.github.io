@@ -1,0 +1,132 @@
+@import 'normalize/import-now';
+
+$primary: #66a6ff;
+
+body {
+	overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	padding: 25px;
+
+	&.dark {
+		background-color: $primary;
+
+		img {
+			filter: brightness(0) invert(1);
+		}
+
+		a {
+			color: white;
+		}
+	}
+
+	img {
+		display: block;
+		height: 50px;
+	}
+}
+
+nav {
+	position: absolute;
+	display: inline-block;
+	margin: 20px;
+	top: 20px;
+	right: 0;
+	font-weight: bold;
+
+	a {
+		padding: 1ex;
+		margin-right: 2ex;
+	}
+
+	a.active {
+		border-bottom: 2px solid white;
+	}
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: white;
+	background-color: $primary;
+	font-size: 1.6vw;
+	padding: 2ex 2em;
+
+	a {
+		color: lightgrey;
+		text-decoration: underline;
+	}
+}
+
+main {
+	padding: 5% 5% 0;
+
+	.center {
+		text-align: center;
+	}
+
+	h1.center {
+		font-size: 2vw;
+	}
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.container {
+	margin: 0 2.5%;
+	font-size: 1.5vw;
+}
+
+.image {
+	width: 50%;
+	top: 50%;
+
+	img {
+		max-height: 1000px;
+		position: relative;
+	}
+}
+
+.text {
+	width: 40%;
+}
+
+.button {
+	display: inline-block;
+	padding: 0 4ex;
+	border: 2px solid $primary;
+	border-radius: 5rem;
+}
+
+.triangle {
+	position: absolute;
+	width: 40%;
+	margin-top: -5%;
+	path {
+		fill: $primary;
+		stroke: $primary;
+		stroke-linejoin: round;
+		stroke-width: 9px;
+	}
+}
+
+.empty {
+	padding: 2%;
+}
+
+.color,
+a {
+	text-decoration: none;
+	color: $primary;
+}
+
