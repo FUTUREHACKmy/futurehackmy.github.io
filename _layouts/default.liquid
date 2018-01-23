@@ -10,18 +10,18 @@
 
 <link rel="icon" type="image/png" href="images/favicon.png">
 
-<header {% if page.title != "Index" %}class="dark"{% endif %}>
-  <a href="/">
+<header>
+  <a href="#home">
     <img src="assets/logo.svg" alt="Futurehack">
   </a>
 
   <nav>
-    <a href="/">HOME</a>
-    <a {% if page.title == "About Us" %}class="active"{% endif %} href="/about.html">ABOUT US</a>
-    <a {% if page.title == "Theme" %}class="active"{% endif %} href="/theme.html">THEME</a>
-    <a href="/faq.html">FAQ</a>
-    <a href="/venue.html">VENUE</a>
-    <a {% if page.title == "Contact Us" %}class="active"{% endif %} href="/contact.html">CONTACT US</a>
+    <a href="#home">HOME</a>
+    <a {% if page.title == "About Us" %}class="active"{% endif %} href="#about">ABOUT US</a>
+    <a {% if page.title == "Theme" %}class="active"{% endif %} href="#theme">THEME</a>
+    <a href="#faq">FAQ</a>
+    <a href="#venue">VENUE</a>
+    <a {% if page.title == "Contact Us" %}class="active"{% endif %} href="#contact">CONTACT US</a>
   </nav>
 </header>
 
