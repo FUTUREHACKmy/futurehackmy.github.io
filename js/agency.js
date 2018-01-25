@@ -16,24 +16,24 @@
     });
 
     // Activate scrollspy to add active class to navbar items on scroll
-    $('body').scrollspy({
-        target: '#mainNav',
-        offset: 20
-    });
+    // $('body').scrollspy({
+    //     target: '#mainNav',
+    //     offset: 20
+    // });
 
     // Closes responsive menu when a link is clicked
-    $('.navbar-collapse>ul>li>a').click(function() {
-        $('.navbar-collapse').collapse('hide');
-    });
+    // $('.navbar-collapse>ul>li>a').click(function() {
+    //     $('.navbar-collapse').collapse('hide');
+    // });
 
     // Collapse the navbar when page is scrolled
-    $(window).scroll(function() {
-        if ($("#mainNav").offset().top > 20) {
-            $("#mainNav").addClass("navbar-shrink");
-        } else {
-            $("#mainNav").removeClass("navbar-shrink");
-        }
-    });
+    // $(window).scroll(function() {
+    //     if ($("#mainNav").offset().top > 20) {
+    //         $("#mainNav").addClass("navbar-shrink");
+    //     } else {
+    //         $("#mainNav").removeClass("navbar-shrink");
+    //     }
+    // });
 
     // Scroll Reveal calls
     window.sr = ScrollReveal();
