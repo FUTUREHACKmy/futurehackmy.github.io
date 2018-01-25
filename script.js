@@ -4,7 +4,7 @@ for (el of document.getElementsByClassName('image')) {
 
 window.onscroll = function() {
   let cl = document.querySelector('header').classList;
-  if (window.scrollY > 50) {
+  if (window.scrollY > 100) {
     cl.add('dark');
   } else {
     cl.remove('dark');
