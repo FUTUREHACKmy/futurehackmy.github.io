@@ -63,10 +63,10 @@
 // google.maps.event.addDomListener(window, 'load', initialise);
 
 function initMap() {
-  var TRENDware = {lat: 3.0540657, lng: 101.7866805};
+  var TRENDware = {lat: 3.0553966, lng: 101.6979176};
   var map = new google.maps.Map(document.getElementById('about-map'), {
     zoom: 18,
-    center: TRENDware
+    center: APU
   });
 
   //Define marker properties.
@@ -91,15 +91,13 @@ function initMap() {
 
   // Add information window content
   var contentString = '<div id="infowindow">'+
-                      '<strong>TRENDware</strong>'+
+                      '<strong>Asia Pacific University of Technology & Innovation</strong>'+
                       '<br>'+
-                      '7-1, 1st Floor,'+
+                      'Jalan Teknologi 5,'+
                       '<br>'+
-                      'Jalan Temenggung 21/9,'+
+                      'Taman Teknologi Malaysia,'+
                       '<br>'+
-                      'Bandar Mahkota Cheras,'+
-                      '<br>'+
-                      '43200 Cheras 9 Miles,'+
+                      '57000 Kuala Lumpur,'+
                       '<br>'+
                       'Selangor';
 

@@ -8,7 +8,7 @@
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
                 $('html, body').animate({
-                    scrollTop: (target.offset().top - 54)
+                    scrollTop: (target.offset().top - 10)
                 }, 1000, "easeInOutExpo");
                 return false;
             }
@@ -18,22 +18,8 @@
 //     Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
         target: '#mainNav',
-        offset: 20
+        offset: 150
     });
-
-    // Closes responsive menu when a link is clicked
-    // $('.navbar-collapse>ul>li>a').click(function() {
-    //     $('.navbar-collapse').collapse('hide');
-    // });
-
-    // Collapse the navbar when page is scrolled
-    // $(window).scroll(function() {
-    //     if ($("#mainNav").offset().top > 20) {
-    //         $("#mainNav").addClass("navbar-shrink");
-    //     } else {
-    //         $("#mainNav").removeClass("navbar-shrink");
-    //     }
-    // });
 
     // Scroll Reveal calls
     window.sr = ScrollReveal();
