@@ -63,24 +63,13 @@
 // google.maps.event.addDomListener(window, 'load', initialise);
 
 function initMap() {
-  var TRENDware = {lat: 3.0553966, lng: 101.6979176};
-  var map = new google.maps.Map(document.getElementById('about-map'), {
+  var APU = { lat: 3.055072, lng: 101.700752 };
+  var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 18,
     center: APU
   });
-
-  //Define marker properties.
-  var markerImage = new google.maps.MarkerImage('img/marker.png',
-  // This marker is 150 pixels wide by 70 pixels tall
-  new google.maps.Size(150,70),
-  //The origin of the marker is 0,0
-  new google.maps.Point(0,0),
-
-);
-
   var marker = new google.maps.Marker({
-    icon: markerImage,
-    position: TRENDware,
+    position: APU,
     map: map
   });
 
