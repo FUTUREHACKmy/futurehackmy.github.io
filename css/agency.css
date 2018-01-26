@@ -687,6 +687,11 @@ section#contact>#contactForm>#mail-statement {
   color: white;
 }
 
+section#contact .form-group input:focus,
+section#contact .form-group textarea:focus {
+  padding: 18px;
+}
+
 section#contact .form-control:focus {
   border-color: #3B97D3;
   border-width: 3px;
