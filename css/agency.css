@@ -95,7 +95,6 @@ body {
   border: 2px solid white;
   background-color: transparent;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   margin: 4px;
 }
 
@@ -104,8 +103,6 @@ body {
 }
 
 #mainNav .container .navbar-brand {
-  width: 300px;
-  padding: 0;
   filter: brightness(0) invert(1);
 }
 
@@ -179,7 +176,6 @@ header.masthead .intro-text .intro-top-heading {
   line-height: 75px;
   margin-bottom: -5px;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
 }
 
 header.masthead .intro-text .intro-mid-heading {
@@ -188,7 +184,6 @@ header.masthead .intro-text .intro-mid-heading {
   line-height: 75px;
   margin-bottom: 5px;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
 }
 
 header.masthead .intro-text .intro-heading {
@@ -197,7 +192,6 @@ header.masthead .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 25px;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
 }
 
 .btn-xl {
@@ -210,7 +204,6 @@ header.masthead .intro-text .intro-heading {
   border-color: #66a6ff;
   background-color: transparent;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
 }
 
 .btn-xl:focus,
@@ -283,7 +276,6 @@ fieldset[disabled] .btn-xl.focus {
     line-height: 75px;
     margin-bottom: 5px;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
   }
   header.masthead .intro-text .intro-mid-heading {
     font-size: 40px;
@@ -291,7 +283,6 @@ fieldset[disabled] .btn-xl.focus {
     line-height: 75px;
     margin-bottom: 5px;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
   }
   header.masthead .intro-text .intro-heading {
     font-size: 60px;
@@ -299,7 +290,6 @@ fieldset[disabled] .btn-xl.focus {
     line-height: 75px;
     margin-bottom: 50px;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
   }
   .btn-xl {
     font-size: 18px;
@@ -311,7 +301,6 @@ fieldset[disabled] .btn-xl.focus {
     border-color: #66a6ff;
     background-color: transparent;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
   }
   .btn-xl:focus,
   .btn-xl.focus {
@@ -759,24 +748,18 @@ ul.social-buttons {
 }
 
 ul.social-buttons li a {
-  font-size: 20px;
+  font-size: 2em;
   line-height: 40px;
-  display: block;
-  width: 40px;
-  height: 40px;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   transition: all .3s;
-  color: white;
-  border-radius: 100%;
-  outline: none;
-  background-color: #222222;
+  color: black;
 }
 
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-  background-color: #fed136;
+ul.social-buttons li a.fb:hover,
+ul.social-buttons li a.fb:focus,
+ul.social-buttons li a.fb:active {
+  color: #3b5998;
 }
 
 .text-primary {
