@@ -84,7 +84,7 @@ body {
   right: 0;
   padding: 13px;
   text-transform: uppercase;
-  color: white;
+  color: white !important;
   border: 2px solid white;
   background-color: transparent;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
