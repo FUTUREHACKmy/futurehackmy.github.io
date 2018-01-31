@@ -317,24 +317,20 @@ footer {
   color: white;
 }
 
-footer span.copyright {
+footer .text a {
+  text-decoration: underline;
+}
+
+footer a {
+  color: white;
+}
+
+footer .text {
   font-size: 90%;
   line-height: 40px;
-  text-transform: none;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
 }
 
-footer .fa-2x a{
-  color: white;
-}
-
-footer .fa-2x a:hover,
-.credit a:hover {
-  color: #0b71ff;
-}
-
-footer .credit a{
-  text-decoration-line: underline;
-  color: white;
+footer a:hover {
+  color: #7266ff;
 }
