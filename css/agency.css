@@ -317,6 +317,7 @@ footer {
   color: white;
 }
 
+<<<<<<< HEAD
 footer span.copyright {
   font-size: 90%;
   line-height: 40px;
@@ -338,3 +339,22 @@ footer .credit a{
   text-decoration-line: underline;
   color: white;
 }
+=======
+footer .text a {
+  text-decoration: underline;
+}
+
+footer a {
+  color: white;
+}
+
+footer .text {
+  font-size: 90%;
+  line-height: 40px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+footer a:hover {
+  color: #7266ff;
+}
+>>>>>>> 31abf8beb8155166638c3c43d80729941a3c4269
