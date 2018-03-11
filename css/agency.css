@@ -318,23 +318,30 @@ footer {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 footer span.copyright {
   font-size: 90%;
   line-height: 40px;
   text-transform: none;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+=======
+footer .text a {
+  text-decoration: underline;
+>>>>>>> 49735ac686c8572164a1b9f146b6fdb5103be8d6
 }
 
-footer .fa-2x a{
+footer a {
   color: white;
 }
 
-footer .fa-2x a:hover,
-.credit a:hover {
-  color: #0b71ff;
+footer .text {
+  font-size: 90%;
+  line-height: 40px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+<<<<<<< HEAD
 footer .credit a{
   text-decoration-line: underline;
   color: white;
@@ -358,3 +365,8 @@ footer a:hover {
   color: #7266ff;
 }
 >>>>>>> 31abf8beb8155166638c3c43d80729941a3c4269
+=======
+footer a:hover {
+  color: #7266ff;
+}
+>>>>>>> 49735ac686c8572164a1b9f146b6fdb5103be8d6
